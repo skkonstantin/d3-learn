@@ -1,0 +1,15 @@
+:host {
+  display: flex;
+  min-height: 100vh;
+}
+
+.main {
+  flex-grow: 1;
+  display: grid;
+  grid-template-columns: 300px 1fr;
+}
+
+.main__content {
+  display: flex;
+  flex-direction: column;
+}

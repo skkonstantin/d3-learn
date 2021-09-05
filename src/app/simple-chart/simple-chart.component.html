@@ -1,0 +1,20 @@
+<div class="wrapper" #wrapper>
+  <svg [attr.height]="outerHeight" [attr.width]="outerWidth">
+    <g #chart>
+      <rect
+        [attr.x]="0"
+        [attr.width]="innerWidth"
+        [attr.y]="yScale(32)"
+        [attr.height]="innerHeight - yScale(32)"
+        [attr.fill]="'#e0f3f3'"
+      ></rect>
+
+      <path
+        [attr.d]="lineGenerator"
+        [attr.fill]="'none'"
+        [attr.stroke]="'#af9358'"
+        [attr.stroke-width]="2"
+      ></path>
+    </g>
+  </svg>
+</div>
